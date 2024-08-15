@@ -1,7 +1,7 @@
 import React, {useState, useRef} from 'react';
 import './Word.css';
 
-function Word({word,setGuess, correct} ) {
+function Word({setGuess, correct} ) {
     const [letters, setLetters] = useState(Array(5).fill(''));
     const inputRefs = useRef([]);
 
